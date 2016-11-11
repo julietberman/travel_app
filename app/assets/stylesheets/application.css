@@ -9,9 +9,26 @@
    justify-content: center;
    align-items: center;
    font-family: Helvetica;
+   color: RGBA(89, 89, 89, 1.00);
  }
 
+h1{
+  font-size: 46px;
+  color: RGBA(37, 68, 102, 1.00);
+  margin: 10px;
+  text-align: center;
+}
 
+h3{
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+}
+
+p{
+  margin: 10px;
+  padding: 10px;
+}
  nav {
    float: center;
    display: flex;
@@ -37,46 +54,78 @@
   background: #595959;
  }
 
+p{
+  text-align: center;
+  line-height: 26px;
+}
 
- h1{
-   color: RGB(65, 65, 67);
- }
-
- h3{
-   margin: 0;
-   color: RGB(65, 65, 67);
- }
-
- img {
-   max-height: 70%;
+img.icon {
+   max-height: 200px;
    position: relative;
  }
+
+img.trip {
+  max-height: 100%;
+  position: relative;
+}
 
 img.logo{
   max-height: 100px;
 }
 
- main {
-   display: flex;
+img.page {
+  max-height: 300px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  color: #FFFFFF;
+  z-index: 1;
+  font-size: 34px;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+   display: inline-flex;;
    flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
  }
 
- div {
+div.body{
+  width:55%;
+  height:10%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, .8);  display:flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  justify-content:center;
+  position:relative;
+  overflow: visible;
+}
+
+
+ div.circle{
    width:300px;
    height:300px;
-   margin: 0 10px;
-   background-color: rgba(255, 255, 255, .5);
    margin: 30px;
-   /*border: 6px outset;*/
+   background-color: rgba(255, 255, 255, 0.5);
    border-radius: 100%;
    align-items: center;
    justify-content:center;
    position:relative;
    display:flex;
+   flex-direction: column;
    overflow:hidden;
  }
- div#discover:hover:after {
-    content:"Discover Your Next Adventure";
+
+
+
+
+ div:hover:after {
     text-align: center;
     align-items: center;
     justify-content:center;
@@ -92,18 +141,34 @@ img.logo{
     left:0;
 }
 
+div#discover:hover:after{
+  content:"Discover Your Next Adventure";
+}
 div#register:hover:after {
    content:"Ready, Set, Register!";
-   align-items: center;
-   justify-content:center;
-   position:relative;
-   display:flex;
-   color: white;
-   font-size: 25px;
-   width:100%;
-   height:100%;
-   background: RGBA(15, 59, 107, .7);
-   position:absolute;
-   top:0;
-   left:0;
+}
+
+div#trip:hover:after{
+  content:"";
+}
+
+div#list{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+span{
+  padding: 5px;
+  line-height: 30px;
+}
+
+img.pointer{
+  width:20px;
+  height:20px;
+  display: inline-block;
+  vertical-align: middle;
 }

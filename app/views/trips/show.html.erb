@@ -1,0 +1,23 @@
+<div class="body">
+<h1><%=@trip.country%></h1>
+<h3><%=@trip.trip%></h3>
+<p><%=@trip.description%></p>
+
+<div id="list">
+  <span>
+    <%= image_tag("pointer.png", class:"pointer")%> <strong>Departure:</strong> <%=@trip.departure%>
+  </span>
+
+  <span>
+    <%= image_tag("pointer.png", class:"pointer")%> <strong>Return:</strong> <%=@trip.return%>
+  </span>
+
+  <span>
+    <%= image_tag("pointer.png", class:"pointer")%> <strong>Cost:</strong> $<%=@trip.cost%>
+  </span>
+  <span>
+    <%= image_tag("pointer.png", class:"pointer")%> <strong>Availability:</strong> <%=@trip.availability%>
+  </span>
+</div>
+
+</div>
