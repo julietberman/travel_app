@@ -1,0 +1,38 @@
+<div class="body">
+<h2>Edit Trip: <%=@trip.country%></h2>
+
+<%= form_for @trip do |f| %>
+  <%= f.label :trip_highlight %>
+  <%= f.text_area :trip %>
+<br><br>
+<%= f.label :description%>
+<%= f.text_area :description, class:"test" %>
+<br><br>
+
+<%= f.label :departure %>
+<%= f.text_field :departure %>
+
+<%= f.label :return %>
+<%= f.text_field :return %>
+<br><br>
+
+<%= f.label :cost %>
+<%= f.text_field :cost %>
+<br><br>
+
+
+<%= f.label :img_url %>
+<%= f.text_field :img_url %>
+<br><br>
+
+Availability: <%= f.select(:availability, [
+    ["Available", "Available"],
+    ["Limited Availability", "Limited Availability"],
+    ["Wait-list Only", "Wait-list Only"]])%>
+<br><br>
+
+<%= f.submit "Update", class:"submit"%>
+
+<% end %>
+
+</div>

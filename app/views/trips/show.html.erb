@@ -19,5 +19,8 @@
     <%= image_tag("pointer.png", class:"pointer")%> <strong>Availability:</strong> <%=@trip.availability%>
   </span>
 </div>
-
+<section>
+ <button><%= link_to "Edit Trip Details", edit_trip_path(@trip)%></button>
+ <button><%= link_to "Remove Program", @trip, method: :delete, class: "delete" %></button>
+</section>
 </div>

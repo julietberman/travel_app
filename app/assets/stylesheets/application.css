@@ -1,5 +1,3 @@
-
-
  body{
    background-image: url("travel.png");
    background-size: cover;
@@ -10,10 +8,18 @@
    align-items: center;
    font-family: Helvetica;
    color: RGBA(89, 89, 89, 1.00);
+   margin-bottom: 30px;
  }
 
 h1{
   font-size: 46px;
+  color: RGBA(37, 68, 102, 1.00);
+  margin: 10px;
+  text-align: center;
+}
+
+h2{
+  font-size: 34px;
   color: RGBA(37, 68, 102, 1.00);
   margin: 10px;
   text-align: center;
@@ -42,11 +48,8 @@ p{
  nav > a {
  color: white;
  text-decoration: none;
- font-size: 20px;
- padding-top: 4px;
- padding-bottom: 4px;
- padding-left: 20px;
- padding-right: 20px;
+ font-size: 18px;
+ padding: 4px 20px 4px 20px;
  border: 6px solid transparent;
  }
 
@@ -123,22 +126,20 @@ div.body{
  }
 
 
-
-
- div:hover:after {
-    text-align: center;
-    align-items: center;
-    justify-content:center;
-    position:relative;
-    display:flex;
-    color: white;
-    font-size: 25px;
-    width:100%;
-    height:100%;
-    background: RGBA(15, 59, 107, .7);
-    position:absolute;
-    top:0;
-    left:0;
+div:hover:after {
+  text-align: center;
+  align-items: center;
+  justify-content:center;
+  position:relative;
+  display:flex;
+  color: white;
+  font-size: 25px;
+  width:100%;
+  height:100%;
+  background: RGBA(15, 59, 107, .7);
+  position:absolute;
+  top:0;
+  left:0;
 }
 
 div#discover:hover:after{
@@ -171,4 +172,40 @@ img.pointer{
   height:20px;
   display: inline-block;
   vertical-align: middle;
+}
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+button, .submit{
+  padding: 5px 16px;
+  margin: 10px;
+  font-size: 14px;
+  background-color: RGBA(15, 59, 107, .8);
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+button:hover{
+  background-color: RGBA(15, 59, 107, 1);
+}
+
+.submit:hover{
+  background-color: RGBA(15, 59, 107, 1);
+}
+
+textarea{
+  padding: 10px;
+  width: 100%;
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+#add{
+  color:  RGBA(15, 59, 107, 1);
 }
