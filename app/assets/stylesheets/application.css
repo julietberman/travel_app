@@ -1,0 +1,109 @@
+
+
+ body{
+   background-image: url("travel.png");
+   background-size: cover;
+   background-attachment: fixed;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: Helvetica;
+ }
+
+
+ nav {
+   float: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin: 20px 0;
+   width: 80%;
+   background: RGBA(142, 142, 142, .5);
+ }
+
+ nav > a {
+ color: white;
+ text-decoration: none;
+ font-size: 20px;
+ padding-top: 4px;
+ padding-bottom: 4px;
+ padding-left: 20px;
+ padding-right: 20px;
+ border: 6px solid transparent;
+ }
+
+ nav > a:hover{
+  background: #595959;
+ }
+
+
+ h1{
+   color: RGB(65, 65, 67);
+ }
+
+ h3{
+   margin: 0;
+   color: RGB(65, 65, 67);
+ }
+
+ img {
+   max-height: 70%;
+   position: relative;
+ }
+
+img.logo{
+  max-height: 100px;
+}
+
+ main {
+   display: flex;
+   flex-direction: row;
+ }
+
+ div {
+   width:300px;
+   height:300px;
+   margin: 0 10px;
+   background-color: rgba(255, 255, 255, .5);
+   margin: 30px;
+   /*border: 6px outset;*/
+   border-radius: 100%;
+   align-items: center;
+   justify-content:center;
+   position:relative;
+   display:flex;
+   overflow:hidden;
+ }
+ div#discover:hover:after {
+    content:"Discover Your Next Adventure";
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    position:relative;
+    display:flex;
+    color: white;
+    font-size: 25px;
+    width:100%;
+    height:100%;
+    background: RGBA(15, 59, 107, .7);
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+div#register:hover:after {
+   content:"Ready, Set, Register!";
+   align-items: center;
+   justify-content:center;
+   position:relative;
+   display:flex;
+   color: white;
+   font-size: 25px;
+   width:100%;
+   height:100%;
+   background: RGBA(15, 59, 107, .7);
+   position:absolute;
+   top:0;
+   left:0;
+}
