@@ -8,8 +8,8 @@
 
 
 Trip.destroy_all
-Participant.destroy_all
-Registration.destroy_all
+Profile.destroy_all
+Signup.destroy_all
 
 iceland = Trip.create(country: "Iceland", trip: "Blue Lagoon & Northern Lights", departure: "March 7", return: "March 12", availability: "Available", cost: 2385, img_url: "http://newsdiaspora.ro/wp-content/uploads/2016/06/Hurtigruten-Northern-Norway-Northern-Lights.jpg", description: "The most northerly country in the world combines amazing natural wonders with the exciting buzz of a thriving, creative metropolis.")
 
@@ -24,46 +24,45 @@ costa_rica = Trip.create(country: "Costa Rica", trip: "Active Adventure and Rugg
 south_africa = Trip.create(country: "South Africa", trip: "Luxury Safari Escape", departure: "April 17", return: "April 30", availability: "Limited Availability", cost: 4295, img_url: "http://www.zicasso.com/sites/default/files/styles/original_scaled_down/public/media/south_africa_safari-lios_cub.jpg", description: "Golden beaches, lively cities, mountain landscapes and nature reserves teeming with wildlife await in Africa’s southernmost country.")
 
 
+adams = Profile.create(name: "Ava Adams", gender: "Female", dob: "03/15/1984", address: "235 Oxford Ave.", city: "San Francisco", state: "CA", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email1@gmail.com", notes: "Allergic to nuts")
 
-adams = Participant.create(name: "Ava Adams", gender: "Female", dob: "03/15/1984", address: "235 Oxford Ave.", city: "San Francisco", state: "CA", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email1@gmail.com", notes: "Allergic to nuts")
+boylston = Profile.create(name: "Bob Boylston", gender: "Male", dob: "04/04/1980", address: "1734 Commonwealth Ave.", city: "Boston", state: "MA", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email2@gmail.com", notes: "N/A")
 
-boylston = Participant.create(name: "Bob Boylston", gender: "Male", dob: "04/04/1980", address: "1734 Commonwealth Ave.", city: "Boston", state: "MA", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email2@gmail.com", notes: "N/A")
+conway = Profile.create(name: "Cowboy Conway", gender: "Male", dob: "11/28/1987", address: "45 Rodeo St.", city: "Austin", state: "TX", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email3@gmail.com", notes: "N/A")
 
-conway = Participant.create(name: "Cowboy Conway", gender: "Male", dob: "11/28/1987", address: "45 Rodeo St.", city: "Austin", state: "TX", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email3@gmail.com", notes: "N/A")
+davidson = Profile.create(name: "Daniel Davidson", gender: "Male", dob: "03/15/1984", address: "235 Oxford Ave.", city: "San Francisco", state: "CA", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email4@gmail.com", notes: "N/A")
 
-davidson = Participant.create(name: "Daniel Davidson", gender: "Male", dob: "03/15/1984", address: "235 Oxford Ave.", city: "San Francisco", state: "CA", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email4@gmail.com", notes: "N/A")
+evans = Profile.create(name: "Elyse Evans", gender: "Female", dob: "06/11/1991", address: "3821 Porter St. NW", city: "Washington", state: "D.C.", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email5@gmail.com", notes: "Gluten-free and vegan")
 
-evans = Participant.create(name: "Elyse Evans", gender: "Female", dob: "06/11/1991", address: "3821 Porter St. NW", city: "Washington", state: "D.C.", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email5@gmail.com", notes: "Gluten-free and vegan")
+frederick = Profile.create(name: "Francine Frederick", gender: "Female", dob: "02/27/1983", address: "3201 E 42nd St", city: "New York", state: "NY", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email6@gmail.com", notes: "N/A")
 
-frederick = Participant.create(name: "Francine Frederick", gender: "Female", dob: "02/27/1983", address: "3201 E 42nd St", city: "New York", state: "NY", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email6@gmail.com", notes: "N/A")
+gray = Profile.create(name: "Ginny Gray", gender: "Female", dob: "08/22/1988", address: "4560 Tanner Rd.", city: "New Orleans", state: "LA", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email7@gmail.com", notes: "Allergic to nuts")
 
-gray = Participant.create(name: "Ginny Gray", gender: "Female", dob: "08/22/1988", address: "4560 Tanner Rd.", city: "New Orleans", state: "LA", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email7@gmail.com", notes: "Allergic to nuts")
+harrison = Profile.create(name: "Henry Harrison", gender: "Male", dob: "01/15/1987", address: "67 South Shore Rd.", city: "Chicago", state: "IL", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email8@gmail.com", notes: "N/A")
 
-harrison = Participant.create(name: "Henry Harrison", gender: "Male", dob: "01/15/1987", address: "67 South Shore Rd.", city: "Chicago", state: "IL", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email8@gmail.com", notes: "N/A")
+isaacs = Profile.create(name: "Ian Isaacs", gender: "Male", dob: "10/03/1978", address: "224 Beach Drive", city: "Miami", state: "FL", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email9@gmail.com", notes: "N/A")
 
-isaacs = Participant.create(name: "Ian Isaacs", gender: "Male", dob: "10/03/1978", address: "224 Beach Drive", city: "Miami", state: "FL", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email9@gmail.com", notes: "N/A")
+jacobs = Profile.create(name: "Jenny Jacobs", gender: "Female", dob: "05/26/1982", address: "122 Main St.", city: "Richmond", state: "VA", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email10@gmail.com", notes: "N/A")
 
-jacobs = Participant.create(name: "Jenny Jacobs", gender: "Female", dob: "05/26/1982", address: "122 Main St.", city: "Richmond", state: "VA", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email10@gmail.com", notes: "N/A")
+kellog = Profile.create(name: "Kevin Kellog", gender: "Male", dob: "08/30/1986", address: "54 Rainy Ave.", city: "Portland", state: "OR", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email11@gmail.com", notes: "N/A")
 
-kellog = Participant.create(name: "Kevin Kellog", gender: "Male", dob: "08/30/1986", address: "54 Rainy Ave.", city: "Portland", state: "OR", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email11@gmail.com", notes: "N/A")
+lemon = Profile.create(name: "Lisa Lemon", gender: "Female", dob: "04/23/1985", address: "89 Bellvue Rd.", city: "Charleston", state: "NC", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email12@gmail.com", notes: "N/A")
 
-lemon = Participant.create(name: "Lisa Lemon", gender: "Female", dob: "04/23/1985", address: "89 Bellvue Rd.", city: "Charleston", state: "NC", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email12@gmail.com", notes: "N/A")
+neville = Profile.create(name: "Nate Nevins", gender: "Male", dob: "07/18/1981", address: "796 Moose Dr.", city: "Augusta", state: "ME", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email13@gmail.com", notes: "Shellfish allergy")
 
-neville = Participant.create(name: "Nate Nevins", gender: "Male", dob: "07/18/1981", address: "796 Moose Dr.", city: "Augusta", state: "ME", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email13@gmail.com", notes: "Shellfish allergy")
+owens = Profile.create(name: "Olivia Owens", gender: "Female", dob: "09/27/1982", address: "1246 Seaport St.", city: "Anchorage", state: "AK", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email14@gmail.com", notes: "N/A")
 
-owens = Participant.create(name: "Olivia Owens", gender: "Female", dob: "09/27/1982", address: "1246 Seaport St.", city: "Anchorage", state: "AK", zip: "12345", passport: "100495861052", telephone_num: "555-123-4567", email: "email14@gmail.com", notes: "N/A")
-
-iceland.registrations.create(participant: neville)
-iceland.registrations.create(participant: lemon)
-france.registrations.create(participant: kellog)
-france.registrations.create(participant: jacobs)
-france.registrations.create(participant: owens)
-italy.registrations.create(participant: isaacs)
-italy.registrations.create(participant: harrison)
-israel.registrations.create(participant: adams)
-israel.registrations.create(participant: boylston)
-costa_rica.registrations.create(participant: conway)
-costa_rica.registrations.create(participant: davidson)
-south_africa.registrations.create(participant: evans)
-south_africa.registrations.create(participant: frederick)
-south_africa.registrations.create(participant: gray)
+iceland.signups.create(profile: neville)
+iceland.signups.create(profile: lemon)
+france.signups.create(profile: kellog)
+france.signups.create(profile: jacobs)
+france.signups.create(profile: owens)
+italy.signups.create(profile: isaacs)
+italy.signups.create(profile: harrison)
+israel.signups.create(profile: adams)
+israel.signups.create(profile: boylston)
+costa_rica.signups.create(profile: conway)
+costa_rica.signups.create(profile: davidson)
+south_africa.signups.create(profile: evans)
+south_africa.signups.create(profile: frederick)
+south_africa.signups.create(profile: gray)

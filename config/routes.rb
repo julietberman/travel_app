@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users
+
     root "welcome#index"
 
     resources :trips
-    resources :participants
-    resources :registrations
+    resources :profiles
+    resources :signups
   end

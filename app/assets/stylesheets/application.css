@@ -209,3 +209,8 @@ textarea{
 #add{
   color:  RGBA(15, 59, 107, 1);
 }
+
+#login{
+  width: 100%;
+  text-align: right;
+}

@@ -1,4 +1,4 @@
 class Trip < ApplicationRecord
-  has_many :registrations
-  has_many :participants, through: :registrations
+  has_many :signups
+  has_many :profiles, through: :signups
 end
