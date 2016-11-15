@@ -1,0 +1,40 @@
+<h1><%= @profile.name %>'s Profile<br/></h1>
+
+<section>
+  <div class="body"  id="profile">
+    <h3>Personal Information</h3><br/>
+    <p><span>Name: </span><%=@profile.name%></p>
+    <p><span>Gender: </span><%=@profile.gender%></p>
+    <p><span>Date of Birth: </span><%=@profile.dob%></p>
+    <p><span>Address: </span><%=@profile.address%></p>
+    <p><%=@profile.city%>, <%=@profile.state%> <%=@profile.zip%></p>
+    <p><span>Passport #: </span><%=@profile.passport%></p>
+    <p><span>Telephone: </span><%=@profile.telephone_num%></p>
+    <p><span>Email: </span><%=@profile.email%></p>
+    <p><span>Additional Notes: </span><%=@profile.notes%></p>
+    <section>
+      <button><%= link_to "Edit Personal Info",edit_profile_path(@profile)%></button>
+    </section>
+
+</div>
+</section>
+<br/><br/>
+<section>
+
+
+
+  <div class="body"  id="profile">
+    <h3>Trip Registrations</h3>
+
+    <br/>
+    <% @signups.each_with_index do |signup, index|%>
+    <p><span>Trip #<%=index +1%>:</span> <%=signup.trip.country%></p>
+    <p><span>Departure Date:</span> <%=signup.trip.departure%></p>
+    <p><span>Details:</span> <%=link_to "Trip Info", trip_path(signup.trip.id)%></p>
+    <button><%= link_to "Change Trip Registration", edit_signup_path(signup) %></button>
+    <%end%>
+    <HR WIDTH="75%" COLOR="#254466" SIZE="2">
+    <button>New Trip</button>
+
+</div>
+</section>

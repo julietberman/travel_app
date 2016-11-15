@@ -26,14 +26,18 @@ h2{
 }
 
 h3{
+  font-size: 24px;
   padding: 5px;
+  color: RGBA(37, 68, 102, 1.00);
   margin: 0;
   text-align: center;
 }
 
+
 p{
   margin: 10px;
   padding: 10px;
+  color: RGBA(89, 89, 89, 1.00);
 }
  nav {
    float: center;
@@ -60,7 +64,10 @@ p{
 p{
   text-align: center;
   line-height: 26px;
+  padding: 0;
+  margin: 0;
 }
+
 
 img.icon {
    max-height: 200px;
@@ -162,9 +169,16 @@ div#list{
   margin-bottom: 10px;
 }
 
+div#profile{
+  width: 600px;
+  text-align: left;
+}
+
 span{
   padding: 5px;
   line-height: 30px;
+  color: RGBA(37, 68, 102, 1.00);
+  font-weight: 800;
 }
 
 img.pointer{
@@ -175,10 +189,16 @@ img.pointer{
 }
 
 
-a{
+button>a{
   text-decoration: none;
   color: white;
 }
+
+a{
+  text-decoration: underline;
+  color: RGBA(15, 59, 107, .8);
+}
+
 
 button, .submit{
   padding: 5px 16px;

@@ -1,0 +1,12 @@
+
+<div class="body">
+<h3>Update <%=@profile%>'s Trip Registration</h3>
+<br/>
+
+<%= form_for @signup do |f| %>
+
+<span>Trip:</span> <%= f.select(:trip_id, @trips)%>
+<br><br>
+  <%= f.submit "Update Registration"%>
+<% end %>
+</div>
