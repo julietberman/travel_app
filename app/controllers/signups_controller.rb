@@ -6,7 +6,7 @@ class SignupsController < ApplicationController
 
 def edit
     @signup = Signup.find(params[:id])
-    @profile = @signup.profile.name
+    @profile=Profile.find(params[:profile_id])
 
     @trips = Trip.all.map do |trip|
       [trip.country, trip.id]
@@ -39,6 +39,13 @@ def edit
     redirect_to profile_path(profile)
   end
 
+  def destroy
+      @signup = Signup.find(params[:id])
+      @signup.destroy
+      profile = Profile.find(params[:profile_id])
+
+      redirect_to profile_path(profile)
+    end
 
   private
     def signup_params
