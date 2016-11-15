@@ -4,6 +4,9 @@ Rails.application.routes.draw do
     root "welcome#index"
 
     resources :trips
-    resources :profiles
-    resources :signups
+    resources :profiles do
+      resources :signups
+    end
+
+    resources :signups, only: [:index]
   end

@@ -31,10 +31,10 @@
     <p><span>Trip #<%=index +1%>:</span> <%=signup.trip.country%></p>
     <p><span>Departure Date:</span> <%=signup.trip.departure%></p>
     <p><span>Details:</span> <%=link_to "Trip Info", trip_path(signup.trip.id)%></p>
-    <button><%= link_to "Change Trip Registration", edit_signup_path(signup) %></button>
+    <button><%= link_to "Change Trip Registration", edit_profile_signup_path(@profile, signup) %></button>
     <%end%>
     <HR WIDTH="75%" COLOR="#254466" SIZE="2">
-    <button>New Trip</button>
+    <button><%=link_to "New Trip", new_profile_signup_path(@profile.id)%></button>
 
 </div>
 </section>
