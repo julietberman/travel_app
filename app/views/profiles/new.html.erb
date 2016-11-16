@@ -1,0 +1,47 @@
+<div class="body">
+<h3>Thank you for signing up! Create your profile:</h3><br/>
+
+<%= form_for @profile do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+<br><br>
+<%= f.label :gender%>
+<%= f.text_field :gender %>
+<br><br>
+
+<%= f.label :dob %>
+<%= f.text_field :dob %>
+
+<%= f.label :address %>
+<%= f.text_field :address %>
+<br><br>
+
+<%= f.label :city %>
+<%= f.text_field :city %>
+<br><br>
+
+<%= f.label :state %>
+<%= f.text_field :state %>
+<br><br>
+
+<%= f.label :zip %>
+<%= f.text_field :zip %>
+<br><br>
+<%= f.label :passport %>
+<%= f.text_field :passport %>
+<br><br>
+<%= f.label :telephone_num %>
+<%= f.text_field :telephone_num %>
+<br><br>
+<%= f.label :email %>
+<%= f.text_field :email %>
+<br><br>
+<%= f.label :notes %>
+<%= f.text_area :notes %>
+<br><br>
+
+<%= f.submit "Create", class:"submit"%>
+
+<% end %>
+
+</div>

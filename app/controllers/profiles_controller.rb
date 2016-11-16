@@ -1,8 +1,17 @@
 class ProfilesController < ApplicationController
 
-  def index
-    @profiles = Profile.all
-  end
+def new
+    @profile = current_user.build_profile
+end
+
+def create
+    @profile = current_user.build_profile(profile_params)
+    if @profile.save
+      redirect_to "/signups"
+    else
+      redirect_to "/profiles/new"
+    end
+end
 
   def show
     @profile = Profile.find(params[:id])
@@ -19,36 +28,6 @@ class ProfilesController < ApplicationController
 
     redirect_to profile_path(profile)
   end
-
-  # def edit
-  #   @trip = Trip.find(params[:id])
-  # end
-
-  # def update
-  #   profile = Profile.find(params[:id])
-  #   profile.update(profile_params)
-  #
-  #   redirect_to profile_path(profile)
-  # end
-  #
-  #
-  # def new
-  #   @profile= Profile.new
-  # end
-  #
-  # def create
-  #   profile = Profile.new(profile_params)
-  #   profile.save
-  #
-  #   redirect_to profile_path(profile)
-  # end
-  #
-  # def destroy
-  #   profile= Profile.find(params[:id])
-  #   profile.destroy
-  #
-  #   redirect_to :root
-  # end
 
   private
   def profile_params
