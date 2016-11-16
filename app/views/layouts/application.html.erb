@@ -17,7 +17,7 @@
     <span><%= link_to "Sign In", new_user_session_path %></span>
 
     <% elsif current_user.profile.id != nil %>
-      <span><%=link_to "Welcome, #{current_user.profile.name}!", "/trips" %></span>
+      <span><%=link_to "Welcome, #{current_user.profile.name}!", profile_path(current_user.profile)%></span>
       <span><%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %></span>
     <% end %>
   </div>
@@ -32,7 +32,7 @@
     <% if !current_user %>
     <%=link_to "Log In", new_user_session_path%>
     <% elsif current_user.profile.id != nil %>
-    <%=link_to "Register", profile_path(current_user.profile) %>
+    <%=link_to "Register", new_profile_signup_path(current_user.profile.id)%>
 
     <% end %>
 
