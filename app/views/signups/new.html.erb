@@ -1,12 +1,19 @@
-
+<section>
 <div class="body">
 <h3>New Trip Registration</h3>
 <br/>
+<p>Join us for an adventure of new experiences, new friendships, and a new way of looking at the world. Travel programs combine elements of active touring, community service, and meaningful  experiences. Dream big, travel often!</p>
+<br/>
+
 
 <%= form_for [@profile, @signup] do |f| %>
 
-<span>Trip:</span> <%= f.select(:trip_id, @trips)%>
-<br><br>
-  <%= f.submit "Register for Trip"%>
+<span>Where would you like to go, <%=current_user.profile.name%>?</span>
+<br/>
+<p>Choose Experience: <%= f.select(:trip_id, @trips)%></p>
+<br>
+  <%= f.submit "Register for Trip", :class => "submit"%>
 <% end %>
+
 </div>
+</section>

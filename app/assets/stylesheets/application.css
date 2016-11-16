@@ -179,8 +179,16 @@ span{
   line-height: 30px;
   color: RGBA(37, 68, 102, 1.00);
   font-weight: 800;
+
 }
 
+span>a:link {
+    text-decoration:none;
+}
+
+span>a:link:hover {
+    text-decoration:underline;
+}
 img.pointer{
   width:20px;
   height:20px;
@@ -209,6 +217,7 @@ button, .submit{
   position: relative;
   display: inline-block;
   color: white;
+
 }
 
 button:hover{
