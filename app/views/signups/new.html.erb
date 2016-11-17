@@ -8,7 +8,7 @@
 
 <%= form_for [@profile, @signup] do |f| %>
 
-<span>Where would you like to go, <%=current_user.profile.name%>?</span>
+<span>Where would you like to go, <%=current_user.profile.name.split.first%>?</span>
 <br/>
 <p>Choose Experience: <%= f.select(:trip_id, @trips)%></p>
 <br>

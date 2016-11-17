@@ -220,6 +220,10 @@ button, .submit{
 
 }
 
+.submit{
+  margin-left: 20%;
+}
+
 button:hover{
   background-color: RGBA(15, 59, 107, 1);
 }

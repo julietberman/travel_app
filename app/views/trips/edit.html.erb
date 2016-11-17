@@ -35,4 +35,8 @@ Availability: <%= f.select(:availability, [
 
 <% end %>
 
+
 </div>
+<% @trip.errors.full_messages.each do |message|%>
+<p><%= message %></p>
+<%end%>
