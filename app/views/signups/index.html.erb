@@ -8,8 +8,13 @@
       <p><span>Trips: </span>
 
       <% @signups = profile.signups.all%>
+
         <% @signups.each do |signup|%>
-        <%=signup.trip.country%>
+          <% if signup.trip != nil%>
+          <%= signup.trip.country %>
+          <% else %>
+          <p>Not Registered</p>
+          <%end%>
         <%end%>
       </p>
       <button><%= link_to "View Profile", profile_path(profile)%></button>

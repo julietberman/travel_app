@@ -7,13 +7,14 @@
 
 
 <%= form_for [@profile, @signup] do |f| %>
+  <br/>
 
-<span>Where would you like to go, <%=current_user.profile.name.split.first%>?</span>
-<br/>
-<p>Choose Experience: <%= f.select(:trip_id, @trips)%></p>
-<br>
-  <%= f.submit "Register for Trip", :class => "submit"%>
-<% end %>
+  <span>Where would you like to go, <%=@profile.name.split.first%>?</span>
+
+  <p>Choose Experience: <%= f.select(:trip_id, @trips)%></p>
+  <br>
+    <%= f.submit "Register for Trip", :class => "submit"%>
+  <% end %>
 
 </div>
 </section>
