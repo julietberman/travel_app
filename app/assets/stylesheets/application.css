@@ -1,7 +1,17 @@
+/*Global CSS*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+
+
  body{
    background-image: url("travel.png");
    background-size: cover;
    background-attachment: fixed;
+   background-repeat: no-repeat;
    display:flex;
    flex-direction: column;
    justify-content: center;
@@ -105,10 +115,12 @@ section {
  }
 
 div.body{
-  width:55%;
-  height:10%;
+  width:450px;
+  min-height:10%;
   padding: 10px;
-  background-color: rgba(255, 255, 255, .8);  display:flex;
+  background-color: rgba(255, 255, 255, .8);
+  display:table-cell;
+  display:flex;
   flex-direction: column;
   border-radius: 10px;
   align-items: center;
@@ -124,19 +136,28 @@ div.body{
    margin: 30px;
    background-color: rgba(255, 255, 255, 0.5);
    border-radius: 100%;
-   align-items: center;
-   justify-content:center;
+   text-align: center;
+   vertical-align: middle;
    position:relative;
    display:flex;
    flex-direction: column;
+   align-items: center;
+   justify-content:center;
    overflow:hidden;
  }
 
-
+div.circle > p{
+  position: absolute;
+   top: 50%;
+   left: 0;
+   right: 0;
+   margin-top: -17px;
+}
 div:hover:after {
   text-align: center;
   align-items: center;
   justify-content:center;
+  align-content: center;
   position:relative;
   display:flex;
   color: white;

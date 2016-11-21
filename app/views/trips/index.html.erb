@@ -3,6 +3,7 @@
 <section>
   <%@trips.each do |trip|%>
   <div class = "circle">
+
     <a href="<%=trip_path(trip)%>">
     <div class="circle" id="trip">
       <p class="overlay"><%=trip.country.upcase%></p>
