@@ -4,6 +4,7 @@ class SignupsController < ApplicationController
     @profiles = Profile.all
   end
 
+# indentation
 def edit
     @signup = Signup.find(params[:id])
     @profile=Profile.find(params[:profile_id])
@@ -39,6 +40,7 @@ def edit
     redirect_to profile_path(profile)
   end
 
+# indentation
   def destroy
       @signup = Signup.find(params[:id])
       @signup.destroy

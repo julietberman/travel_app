@@ -8,6 +8,7 @@
     <p><span>Date of Birth: </span><%=@profile.dob%></p>
     <p><span>Address: </span><%=@profile.address%></p>
     <p><%=@profile.city%>, <%=@profile.state%> <%=@profile.zip%></p>
+    <!-- Would be care ful about have sensitive information like this openly available in a site.  -->
     <p><span>Passport #: </span><%=@profile.passport%></p>
     <p><span>Telephone: </span><%=@profile.telephone_num%></p>
     <p><span>Email: </span><%=@profile.email%></p>
@@ -36,6 +37,7 @@
         </section>
         <%end%>
     <%end%>
+    <!-- noooooo this is an anti pattern, separate content concerns with stylistic concerns in their respective technologies(HTML && CSS)-->
     <HR WIDTH="75%" COLOR="#254466" SIZE="2">
     <button><%=link_to "New Trip", new_profile_signup_path(@profile.id)%></button>
 

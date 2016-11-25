@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20161116015618) do
   end
 
   create_table "signups", force: :cascade do |t|
+    ## it seems like signups should have some of the properties that trips have. Things like the departure  and return. These feel specific to someone signing up for that particular trip.
     t.integer  "trip_id"
     t.integer  "profile_id"
     t.datetime "created_at", null: false
@@ -44,6 +45,7 @@ ActiveRecord::Schema.define(version: 20161116015618) do
 
   create_table "trips", force: :cascade do |t|
     t.string   "country"
+    # what does the trip property of a trip do? this seems like an opportunity
     t.string   "trip"
     t.string   "departure"
     t.string   "return"

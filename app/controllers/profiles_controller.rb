@@ -1,6 +1,6 @@
 class ProfilesController < ApplicationController
 
-
+## watch the indentation for these next two actions
 def new
     @profile = current_user.build_profile
 end
@@ -14,6 +14,7 @@ def create
     end
 end
 
+# theres a couple of times where you query for a sepcific profile, i would recommend a before_action to find the profile you want
   def show
     @profile = Profile.find(params[:id])
     @signups = @profile.signups.all
